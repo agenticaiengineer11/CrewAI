@@ -1,4 +1,4 @@
-from crewai import Agent, Task
+from crewai import Agent, Task, Crew
 
 research_agent = Agent(
     role="Product Research Specialist",
@@ -23,4 +23,9 @@ research_task = Task(
     agent=research_agent,
 )
 
-print(research_task)
+research_crew = Crew(
+    agents=[research_agent],
+    tasks=[research_task],
+)
+
+print(research_crew)
