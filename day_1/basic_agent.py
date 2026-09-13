@@ -28,4 +28,6 @@ research_crew = Crew(
     tasks=[research_task],
 )
 
-print(research_crew)
+result = research_crew.kickoff()
+
+print(result)
