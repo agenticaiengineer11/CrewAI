@@ -1,4 +1,13 @@
-from crewai import Agent, Task, Crew
+import crewai.llms.cache as _crewai_cache
+
+_crewai_cache.mark_cache_breakpoint = lambda msg: msg
+
+from crewai import Agent, Task, Crew, LLM
+
+model = LLM(
+    model="groq/openai/gpt-oss-120b",
+    temperature=0.7,
+)
 
 research_agent = Agent(
     role="Product Research Specialist",
@@ -7,6 +16,7 @@ research_agent = Agent(
         "You are an experienced product research specialist "
         "who analyzes products and their potential markets."
     ),
+    llm=model,
 )
 
 research_task = Task(
