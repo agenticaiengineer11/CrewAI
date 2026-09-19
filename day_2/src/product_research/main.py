@@ -1,15 +1,13 @@
-from product_research.crew import create_crew
+from product_research.crew import ProductResearchCrew
 
 
 def main():
-    product_name = "Wireless Charging Station"
+    inputs = {
+        "product_name": "Wireless Charging Station"
+    }
 
-    crew = create_crew()
-
-    result = crew.kickoff(
-        inputs={
-            "product_name": product_name
-        }
+    result = ProductResearchCrew().crew().kickoff(
+        inputs=inputs
     )
 
     print("\n===== FINAL RESULT =====\n")
