@@ -1,16 +1,32 @@
-from crewai import Crew, Process
-
-from product_research.agents.research_agent import create_research_agent
-from product_research.tasks.research_task import create_research_task
+from crewai import Agent, Crew, Process, Task
+from crewai.project import CrewBase, agent, crew, task
 
 
-def create_crew() -> Crew:
-    research_agent = create_research_agent()
-    research_task = create_research_task()
+@CrewBase
+class ProductResearchCrew:
 
-    return Crew(
-        agents=[research_agent],
-        tasks=[research_task],
-        process=Process.sequential,
-        verbose=True
-    )
+    agents_config = "config/agents.yaml"
+    tasks_config = "config/tasks.yaml"
+
+    @agent
+    def researcher(self) -> Agent:
+        return Agent(
+            config=self.agents_config["researcher"],
+            verbose=True,
+        )
+
+    @task
+    def research_task(self) -> Task:
+        return Task(
+            config=self.tasks_config["research_task"],
+            agent=self.researcher(),
+        )
+
+    @crew
+    def crew(self) -> Crew:
+        return Crew(
+            agents=self.agents,
+            tasks=self.tasks,
+            process=Process.sequential,
+            verbose=True,
+        )

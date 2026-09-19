@@ -1,0 +1,15 @@
+research_task:
+  description: >
+    Research the product "{product_name}".
+    Identify its main features, target customers,
+    common use cases, competitive landscape,
+    and important market considerations.
+
+  expected_output: >
+    A structured product research report containing:
+    1. Product overview
+    2. Main features
+    3. Target customers
+    4. Common use cases
+    5. Competitive landscape
+    6. Market considerations
