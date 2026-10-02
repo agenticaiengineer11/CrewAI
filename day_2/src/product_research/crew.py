@@ -25,6 +25,8 @@ class ProductResearchCrew:
             config=self.agents_config["researcher"],
             llm=self.llm,
             verbose=True,
+            allow_delegation=False,
+            max_iter=5,
         )
 
     @task
