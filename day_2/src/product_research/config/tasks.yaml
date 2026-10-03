@@ -1,9 +1,13 @@
 research_task:
   description: >
     Research the product "{product_name}".
+
     Identify its main features, target customers,
-    common use cases, competitive landscape,
-    and important market considerations.
+    common use cases, and important market considerations.
+
+    Provide a clear product overview. Do not invent
+    specifications, customer statistics, or market data.
+    Clearly label any assumptions.
 
   expected_output: >
     A structured product research report containing:
@@ -11,5 +15,26 @@ research_task:
     2. Main features
     3. Target customers
     4. Common use cases
-    5. Competitive landscape
-    6. Market considerations
+    5. Market considerations
+    6. Verified facts and assumptions
+
+competitor_task:
+  description: >
+    Analyze competitors relevant to "{product_name}".
+
+    Use the product research report provided as context.
+    Identify relevant competing products, compare their
+    features and positioning, and explain their
+    differentiators.
+
+    If reliable competitor information is unavailable,
+    state that clearly instead of inventing details.
+
+  expected_output: >
+    A structured competitor analysis report containing:
+    1. Product being analyzed
+    2. Relevant competitors
+    3. Feature comparison
+    4. Competitor positioning
+    5. Key differentiators
+    6. Information gaps and assumptions
