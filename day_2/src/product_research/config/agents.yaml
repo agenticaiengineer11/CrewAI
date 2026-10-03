@@ -30,7 +30,7 @@ competitor_analyst:
     reports. You clearly distinguish available evidence
     from assumptions and do not invent competitor data.
   
-  market_research_analyst:
+market_research_analyst:
   role: >
     E-commerce Market Research Analyst
   goal: >
