@@ -64,6 +64,14 @@ class ProductResearchCrew:
             agent=self.competitor_analyst(),
             context=[self.research_task()],
         )
+    @task
+    def market_summary_task(self) -> Task:
+        return Task(
+            config = self.tasks_config["market_summary_task"],
+            agent = self.market_research_analyst(),
+            context = [self.research_task(), self.competitor_task()],
+        )
+    
 
     @crew
     def crew(self) -> Crew:
