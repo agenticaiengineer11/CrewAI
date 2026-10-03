@@ -42,12 +42,21 @@ market_summary_task:
   description: >
     Conduct market research for "{product_name}".
 
-    identify market trends, customer preferences, and potential opportunities.
-    Give me a clear summary of the market landscape, including any relevant statistics or insights.
+    Identify market trends, customer preferences,
+    and potential opportunities.
+
+    Provide a clear summary of the market landscape,
+    including relevant statistics and insights.
+
+    Do not invent statistics or market data.
+    Clearly identify the source or state when reliable
+    data is unavailable.
+
   expected_output: >
     A structured market research summary containing:
-    1: Market trends
-    2: Customer preferences
-    3: Potential opportunities
-    4: Relevant statistics and insights 
-  
+    1. Market trends
+    2. Customer preferences
+    3. Potential opportunities
+    4. Relevant statistics and insights
+    5. Information sources
+    6. Information gaps and assumptions
