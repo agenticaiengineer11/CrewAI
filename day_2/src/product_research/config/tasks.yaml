@@ -38,7 +38,7 @@ competitor_task:
     4. Competitor positioning
     5. Key differentiators
     6. Information gaps and assumptions
-  market_summary_task:
+market_summary_task:
   description: >
     Conduct market research for "{product_name}".
 
