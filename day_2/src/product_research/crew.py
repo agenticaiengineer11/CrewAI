@@ -40,6 +40,16 @@ class ProductResearchCrew:
             max_iter=5,
         )
 
+    @agent
+    def market_research_analyst(self) -> Agent:
+        return Agent(
+            config=self.agents_config["market_research_analyst"],
+            llm=self.llm,
+            verbose=True,
+            allow_delegation=False,
+            max_iter=5,
+        )
+
     @task
     def research_task(self) -> Task:
         return Task(
