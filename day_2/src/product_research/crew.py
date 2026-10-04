@@ -1,5 +1,5 @@
 import crewai.llms.cache as _crewai_cache
-
+from product_research.tools.ecommerce_tool import calculate_profit_margin 
 from crewai import Agent, Crew, LLM, Process, Task
 from crewai.project import CrewBase, agent, crew, task
 from dotenv import load_dotenv
