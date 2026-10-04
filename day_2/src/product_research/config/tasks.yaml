@@ -2,21 +2,26 @@ research_task:
   description: >
     Research the product "{product_name}".
 
-    Identify its main features, target customers,
-    common use cases, and important market considerations.
+    First, use the E-commerce Product Search tool to
+    retrieve basic information about the product.
 
-    Provide a clear product overview. Do not invent
-    specifications, customer statistics, or market data.
-    Clearly label any assumptions.
+    After obtaining the product information, use the
+    Product Price Lookup tool to obtain pricing information.
+
+    Then analyze the information returned by both tools.
+
+    Do not invent product specifications or prices.
+    Clearly identify any information that could not be verified.
 
   expected_output: >
     A structured product research report containing:
     1. Product overview
     2. Main features
-    3. Target customers
-    4. Common use cases
-    5. Market considerations
-    6. Verified facts and assumptions
+    3. Price information
+    4. Target customers
+    5. Common use cases
+    6. Verified facts
+    7. Information gaps and assumptions
 
 competitor_task:
   description: >
