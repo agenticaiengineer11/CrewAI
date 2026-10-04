@@ -26,6 +26,7 @@ class ProductResearchCrew:
             config=self.agents_config["researcher"],
             llm=self.llm,
             verbose=True,
+            tools = [calculate_profit_margin],
             allow_delegation=False,
             max_iter=5,
         )
