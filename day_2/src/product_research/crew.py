@@ -21,7 +21,16 @@ class ProductResearchCrew:
         model="groq/openai/gpt-oss-120b",
         temperature=0.7,
     )
+    @agent
+    def manager(self) ->Agent:
+        return Agent(
+            config = self.agents_config["manager"],
+            llm =self.llm,
+            verbose = True,
+            allow_delegation = True,
+            max_iter = 5,
 
+        )
     @agent
     def researcher(self) -> Agent:
         return Agent(
@@ -81,6 +90,7 @@ class ProductResearchCrew:
         return Crew(
             agents=self.agents,
             tasks=self.tasks,
-            process=Process.sequential,
+            process=Process.hierarchical,
+            manager_agent=self.manager(),
             verbose=True,
-        )
+    )
