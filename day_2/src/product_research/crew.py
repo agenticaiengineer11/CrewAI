@@ -92,5 +92,6 @@ class ProductResearchCrew:
             tasks=self.tasks,
             process=Process.hierarchical,
             manager_agent=self.manager(),
+            memory= True,
             verbose=True,
     )
