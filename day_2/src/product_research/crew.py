@@ -4,9 +4,13 @@ from product_research.tools.product_price_tool import calculate_product_price
 from product_research.tools.product_review_tool import calculate_product_review_sentiment
 from crewai import Agent, Crew, LLM, Process, Task
 from crewai.project import CrewBase, agent, crew, task
+from crewai.knowledge.source.text_file_knowledge_source import TextFileKnowledgeSource
 from dotenv import load_dotenv
 
 load_dotenv()
+product_knowledge = TextFileKnowledgeSource(
+    file_paths=["product_knowledge.txt"]
+)
 
 # Compatibility workaround for the current Groq setup
 _crewai_cache.mark_cache_breakpoint = lambda msg: msg
