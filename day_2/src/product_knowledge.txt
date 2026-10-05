@@ -1,0 +1,315 @@
+# NovaHome Product Knowledge Base
+
+## Company Overview
+
+NovaHome is an online e-commerce company specializing in affordable smart-home and lifestyle products. The company primarily targets young adults, university students, first-time homeowners, and small families.
+
+NovaHome focuses on products that are practical, easy to use, affordable, and suitable for everyday household needs.
+
+---
+
+## Product 1: NovaGlow Smart LED Lamp
+
+Product Category: Smart Home Lighting
+
+Product Price: $29.99
+
+Target Customers:
+
+* University students
+* Remote workers
+* Young professionals
+* Bedroom and desk setup enthusiasts
+
+Key Features:
+
+* Adjustable brightness
+* Three color temperature modes
+* Touch controls
+* USB-C charging
+* 12-hour battery life
+* Compact desk-friendly design
+
+Main Customer Problem:
+Customers need flexible lighting for studying, working, reading, and relaxing without purchasing expensive smart-home lighting systems.
+
+Recommended Selling Angle:
+"One compact lamp for studying, working, and relaxing."
+
+Customer Rating: 4.6/5
+
+Inventory Status: High
+
+---
+
+## Product 2: AquaTrack Smart Water Bottle
+
+Product Category: Fitness and Lifestyle
+
+Product Price: $34.99
+
+Target Customers:
+
+* Gym users
+* University students
+* Office workers
+* Outdoor enthusiasts
+
+Key Features:
+
+* 750 ml capacity
+* Temperature display
+* Hydration reminders
+* Stainless steel body
+* Leak-resistant lid
+* USB rechargeable reminder module
+
+Main Customer Problem:
+Customers often forget to drink enough water during work, study, or exercise.
+
+Recommended Selling Angle:
+"Stay hydrated without having to remember."
+
+Customer Rating: 4.4/5
+
+Inventory Status: Medium
+
+---
+
+## Product 3: FlexiStand Laptop Stand
+
+Product Category: Computer Accessories
+
+Product Price: $24.99
+
+Target Customers:
+
+* Remote workers
+* University students
+* Software developers
+* Freelancers
+
+Key Features:
+
+* Adjustable height
+* Foldable aluminum construction
+* Lightweight design
+* Compatible with laptops from 11 to 17 inches
+* Improved desk ergonomics
+* Non-slip silicone pads
+
+Main Customer Problem:
+Customers experience uncomfortable laptop positioning during long work or study sessions.
+
+Recommended Selling Angle:
+"Raise your laptop. Improve your workspace."
+
+Customer Rating: 4.8/5
+
+Inventory Status: High
+
+---
+
+## Product 4: AirPure Mini Desktop Purifier
+
+Product Category: Home and Office
+
+Product Price: $49.99
+
+Target Customers:
+
+* Apartment residents
+* Office workers
+* Students
+* People with small bedrooms
+
+Key Features:
+
+* Compact desktop design
+* Three fan speeds
+* Replaceable filter
+* Quiet operating mode
+* USB-C power
+* Suitable for small rooms and personal workspaces
+
+Main Customer Problem:
+Customers want a compact air-cleaning solution without purchasing a large and expensive air purifier.
+
+Recommended Selling Angle:
+"Cleaner-feeling personal spaces without taking over your desk."
+
+Customer Rating: 4.5/5
+
+Inventory Status: Low
+
+---
+
+## Product 5: CozyHeat Portable Mug Warmer
+
+Product Category: Kitchen and Office Accessories
+
+Product Price: $27.99
+
+Target Customers:
+
+* Office workers
+* Remote workers
+* Coffee drinkers
+* University students
+
+Key Features:
+
+* Temperature-maintaining heating surface
+* Automatic shutoff
+* USB-C power
+* Compact design
+* Compatible with most flat-bottom mugs
+
+Main Customer Problem:
+Hot drinks often become cold while customers are working, studying, or attending meetings.
+
+Recommended Selling Angle:
+"Keep your coffee warm while you focus."
+
+Customer Rating: 4.3/5
+
+Inventory Status: High
+
+---
+
+## Product 6: SnapCharge 3-in-1 Charging Station
+
+Product Category: Mobile Accessories
+
+Product Price: $39.99
+
+Target Customers:
+
+* Smartphone users
+* Apple ecosystem users
+* Travelers
+* Professionals
+
+Key Features:
+
+* Charges multiple compatible devices
+* Foldable design
+* Compact travel footprint
+* USB-C input
+* Cable management system
+* Anti-slip base
+
+Main Customer Problem:
+Customers dislike carrying multiple charging cables and adapters.
+
+Recommended Selling Angle:
+"One charging station. Less cable clutter."
+
+Customer Rating: 4.7/5
+
+Inventory Status: Medium
+
+---
+
+## Pricing Strategy
+
+NovaHome primarily targets customers looking for products below $50.
+
+Products priced between $20 and $40 are considered the company's core price range.
+
+Products above $50 require stronger differentiation and additional marketing justification.
+
+The company generally avoids competing solely on the lowest price. Instead, it focuses on convenience, useful features, attractive design, and practical everyday benefits.
+
+---
+
+## Target Customer Profile
+
+The primary NovaHome customer is between 18 and 35 years old.
+
+Common characteristics include:
+
+* Uses smartphones and computers regularly
+* Shops online
+* Values convenience
+* Has a moderate disposable income
+* Prefers practical products
+* Responds well to short-form video demonstrations
+* Often discovers products through social media
+* Prefers products that solve a clear everyday problem
+
+---
+
+## Marketing Guidelines
+
+NovaHome product advertisements should focus on the customer's problem rather than simply listing technical specifications.
+
+For example, instead of:
+
+"NovaGlow has three brightness modes."
+
+A stronger marketing message is:
+
+"Adjust your lighting instantly when switching from studying to relaxing."
+
+Short-form video advertisements should demonstrate the product within the first few seconds.
+
+Product demonstrations, before-and-after comparisons, and problem-solution videos are preferred over advertisements containing only static product images.
+
+---
+
+## Product Selection Rules
+
+When evaluating a new product for NovaHome, researchers should consider:
+
+1. Selling price should ideally be between $20 and $50.
+2. The product should solve a recognizable customer problem.
+3. The product should be easy to demonstrate visually.
+4. The product should have potential for social-media marketing.
+5. The product should not require complicated installation.
+6. The product should have a clear target customer.
+7. Products with strong differentiation are preferred over generic commodities.
+8. Products with consistently low inventory should receive additional supply-chain investigation before aggressive advertising.
+
+---
+
+## Research Team Decision Framework
+
+A product should be considered a strong candidate when it satisfies most of the following conditions:
+
+* Price is within the target range.
+* Customer problem is clear.
+* Target audience is identifiable.
+* Product can be demonstrated visually.
+* Product has multiple useful features.
+* Customer rating is above 4.3/5.
+* Inventory is sufficient.
+* Product has a clear marketing angle.
+
+A product should receive additional investigation when:
+
+* Inventory is low.
+* Price is above $50.
+* Customer rating is below 4.3/5.
+* The product is difficult to demonstrate.
+* The target customer is unclear.
+* The product has weak differentiation.
+
+---
+
+## Example Business Scenario
+
+The marketing manager wants to select one product for a new social-media advertising campaign.
+
+The research team should compare the available products based on:
+
+* Target audience
+* Price
+* Customer rating
+* Inventory
+* Problem solved
+* Demonstration potential
+* Marketing angle
+* Overall product fit
+
+The final recommendation should explain not only which product should be selected, but also why the product is a better candidate than the alternatives.
