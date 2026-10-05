@@ -41,6 +41,7 @@ class ProductResearchCrew:
             config=self.agents_config["researcher"],
             llm=self.llm,
             verbose=True,
+            knowledge_sources=[self.product_knowledge],
             tools = [calculate_profit_margin, calculate_product_price, calculate_product_review_sentiment],
             allow_delegation=False,
             max_iter=5,
@@ -52,6 +53,7 @@ class ProductResearchCrew:
             config=self.agents_config["competitor_analyst"],
             llm=self.llm,
             verbose=True,
+            knowledge_sources=[self.product_knowledge],
             allow_delegation=False,
             max_iter=5,
         )
@@ -62,6 +64,7 @@ class ProductResearchCrew:
             config=self.agents_config["market_research_analyst"],
             llm=self.llm,
             verbose=True,
+            knowledge_sources=[self.product_knowledge],
             allow_delegation=False,
             max_iter=5,
         )
