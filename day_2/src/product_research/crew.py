@@ -90,8 +90,6 @@ class ProductResearchCrew:
             agent = self.market_research_analyst(),
             context = [self.research_task(), self.competitor_task()],
         )
-    
-
     @crew
     def crew(self) -> Crew:
         return Crew(
