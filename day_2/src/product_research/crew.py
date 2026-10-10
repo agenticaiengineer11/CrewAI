@@ -100,6 +100,14 @@ class ProductResearchCrew:
             agent = self.market_research_analyst(),
             context = [self.research_task(), self.competitor_task()],
         )
+    @task
+    def decision_task(self) ->Task:
+        return Task(
+            config = self.tasks_config["decision_task"],
+            agent = self.decision_agent(),
+            context = [self.research_task(), self.competitor_task(), self.market_summary_task()],
+            output_pydantic=ProductDecision
+        )
     @crew
     def crew(self) -> Crew:
         return Crew(
