@@ -26,6 +26,15 @@ class ProductResearchCrew:
         model="groq/openai/gpt-oss-120b",
         temperature=0.7,
     )
+    @agent 
+    def decision_agent(self) ->Agent:
+        return Agent(
+            config = self.agents_config["decision_agent"],
+            llm = self.llm,
+            verbose =True,
+            allow_delegation = False,
+            max_iter = 3,
+        )
     @agent
     def manager(self) ->Agent:
         return Agent(
