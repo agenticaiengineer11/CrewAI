@@ -1,3 +1,22 @@
+decision_task:
+  description: >
+    Evaluate the research findings, competitor analysis, and
+    market summary for {product_name}.
+
+    Determine:
+    1. The overall competition level: low, medium, or high.
+    2. Market potential on a scale from 0 to 10.
+    3. Whether the product should be launched, tested further,
+       or rejected.
+    4. The major risks and uncertainties.
+    5. The evidence supporting your recommendation.
+
+    Do not invent facts. Clearly identify missing information
+    and uncertainties.
+  expected_output: >
+    A structured product decision containing the product name,
+    competition level, market potential score, recommendation,
+    and a list of key risks.
 research_task:
   description: >
     Research the product "{product_name}".
