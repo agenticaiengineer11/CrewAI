@@ -9,6 +9,9 @@ product_researcher:
     You evaluate product features, customer needs, use cases, buying
     motivations, and potential selling points. Clearly distinguish
     verified facts from assumptions and avoid inventing research data.
+  llm: openai/gpt-6-luna
+  verbose:True
+  allow_delegation: False
 
 competitor_analyst:
   role: >
@@ -22,6 +25,9 @@ competitor_analyst:
     You identify competitive advantages, market gaps, pricing opportunities,
     and differentiation strategies. Never invent competitor names, prices,
     or performance metrics.
+  llm: openai/gpt-6-luna
+  verbose:True
+  allow_delegation: False
 
 market_analyst:
   role: >
@@ -36,3 +42,6 @@ market_analyst:
     evidence, and estimated unit economics to make practical decisions.
     Explain your scoring methodology, highlight missing data, and never
     present estimates as verified facts.
+  llm: openai/gpt-6-luna
+  verbose:True
+  allow_delegation: False
