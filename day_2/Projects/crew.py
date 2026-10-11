@@ -32,5 +32,12 @@ class CodeReviewerCrew:
     def review_code(self)->Task:
         return Task(
             config =self.tasks_config["review_code"],
-            
+        )
+    @crew
+    def crew(self)->Crew:
+        return Crew(
+            agents = self.agents,
+            tasks = self.tasks,
+            process = Process.sequential,
+            verbose = True
         )
