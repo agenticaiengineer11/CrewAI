@@ -1,0 +1,94 @@
+product_research_task:
+  description: >
+    Research the product: {product_name}.
+
+    Target market: {target_market}
+    Selling price: {selling_price}
+    Supplier cost: {supplier_cost}
+
+    Identify:
+    1. Product features and customer benefits.
+    2. The customer problem it solves.
+    3. Target audience and likely buying motivations.
+    4. Potential product use cases and selling points.
+    5. Demand signals and evidence needed to validate demand.
+    6. Product risks, limitations, and assumptions.
+
+    Use available evidence only. If browsing or external research tools
+    are unavailable, explicitly state that limitation.
+
+    Return a structured product research report.
+  expected_output: >
+    A structured report containing product overview, target audience,
+    customer problems, benefits, demand signals, selling points, risks,
+    and a distinction between verified information and assumptions.
+  agent: product_researcher
+
+competitor_analysis_task:
+  description: >
+    Analyze the competitive landscape for {product_name} in {target_market}.
+
+    Use the product research report from the previous task as context.
+
+    Evaluate:
+    1. Direct and indirect competitors, if identifiable.
+    2. Competitor positioning and differentiation.
+    3. Competitor pricing, when verified.
+    4. Strengths, weaknesses, and potential market gaps.
+    5. Marketing angles and customer objections.
+    6. Opportunities to differentiate this product.
+
+    Do not fabricate competitor information. State clearly when
+    reliable competitor data is unavailable.
+  expected_output: >
+    A competitor analysis report with available competitor evidence,
+    pricing comparisons, positioning, market gaps, opportunities,
+    and unresolved research questions.
+  agent: competitor_analyst
+  context:
+    - product_research_task
+
+market_analysis_task:
+  description: >
+    Produce the final market evaluation for {product_name} in {target_market}.
+
+    Selling price: {selling_price}
+    Supplier cost: {supplier_cost}
+
+    Use the product research and competitor analysis reports.
+
+    Score the product from 0 to 100 using these weighted criteria:
+    - Customer problem and product value: 20 points
+    - Demand evidence: 20 points
+    - Competitive opportunity: 15 points
+    - Profitability potential: 20 points
+    - Target audience and market fit: 15 points
+    - Operational feasibility and risk: 10 points
+
+    For each criterion, provide a score, maximum points, and justification.
+    Penalize missing evidence instead of inventing favorable assumptions.
+
+    Calculate:
+    - Gross profit per unit = selling price - supplier cost.
+    - Gross margin percentage = gross profit / selling price * 100,
+      provided the selling price is greater than zero.
+
+    These calculations exclude advertising, shipping not included in
+    supplier cost, platform fees, payment fees, refunds, and other costs.
+
+    Give a final recommendation:
+    - 80-100: Strong candidate for further validation.
+    - 65-79: Potential candidate; validate weaknesses.
+    - 50-64: High uncertainty; gather more evidence.
+    - Below 50: Do not prioritize at this stage.
+
+    A high score is not proof of product demand or profitability.
+    Finish with the three most important next validation steps.
+  expected_output: >
+    A final product evaluation report containing the weighted score,
+    criterion-by-criterion breakdown, unit economics, evidence limitations,
+    major risks, recommendation, and three next validation steps.
+  agent: market_analyst
+  context:
+    - product_research_task
+    - competitor_analysis_task
