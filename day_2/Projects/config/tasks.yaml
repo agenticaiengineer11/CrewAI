@@ -1,0 +1,46 @@
+analyze_code:
+  description: >
+    Analyze the following source code:
+
+    {code}
+
+    Identify bugs, logical errors, security vulnerabilities, performance
+    bottlenecks, and maintainability problems.
+
+    For every finding, provide:
+    - A short title
+    - Severity: Critical, High, Medium, or Low
+    - The relevant code or location
+    - Why it is a problem
+    - A recommended fix
+
+    If a category has no identifiable issue, say so. Do not invent findings.
+  expected_output: >
+    A structured technical analysis containing prioritized findings,
+    explanations, and recommended fixes.
+  agent: code_analyzer
+
+review_code:
+  description: >
+    Review the complete analysis produced by the code analysis task.
+
+    Source code:
+    {code}
+
+    Validate the findings against the source code. Remove unsupported claims,
+    identify any missed high-risk issues, and prioritize the remaining findings.
+
+    Produce a final report with:
+    1. Executive summary
+    2. Findings grouped by severity
+    3. Evidence and recommended fixes
+    4. Overall code quality assessment
+    5. Final verdict: Approved, Approved with Changes, or Changes Required
+
+    Do not claim that code was executed or tested unless it actually was.
+  expected_output: >
+    A professional code review report with evidence-based findings,
+    severity levels, practical fixes, and a final verdict.
+  agent: code_reviewer
+  context:
+    - analyze_code
