@@ -20,5 +20,17 @@ class CodeReviewerCrew:
             config = self.agents_config["code_reviewer"],
             verbose = True,
             allow_delegation = False,
+
+        )
+    @task
+    def analyze_code(self)->Task:
+        return Task(
+            config =self.tasks_config["analyze_code"],
+
+        )
+    @task
+    def review_code(self)->Task:
+        return Task(
+            config =self.tasks_config["review_code"],
             
         )
