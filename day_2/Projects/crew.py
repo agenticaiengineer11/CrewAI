@@ -1,5 +1,7 @@
 from crewai import Agent,Process, Task, Crew
 from crewai.project import CrewBase, agent, task , crew
+from distro import name
+from distro import name
 @CrewBase
 class CodeReviewerCrew:
     """Two agents for AI code Review"""
@@ -41,3 +43,18 @@ class CodeReviewerCrew:
             process = Process.sequential,
             verbose = True
         )
+if name == "main":
+    sample_code = """
+        def divide(a, b):
+        return a / b
+
+    def get_user(users, index):
+    return users[index]
+"""
+
+result = CodeReviewerCrew().crew().kickoff(
+    inputs={"code": sample_code}
+)
+
+print("\\n===== FINAL CODE REVIEW =====\\n")
+print(result)
