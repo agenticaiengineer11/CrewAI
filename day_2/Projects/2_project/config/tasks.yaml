@@ -92,3 +92,4 @@ market_analysis_task:
   context:
     - product_research_task
     - competitor_analysis_task
+  human_input: true
